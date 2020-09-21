@@ -1,0 +1,28 @@
+﻿<Window x:Class="WpfAppExample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="MainWindow" 
+                  Height="350" 
+                  Width="550">
+    <DockPanel>
+        <Menu>
+            <Menu.Background>
+                <ImageBrush/>
+            </Menu.Background>
+            <MenuItem Header="_File">
+                <MenuItem Header="_New" Icon="&#x1f4C4;" />
+                <MenuItem Header="_Open" Icon="&#x1F4C2;" />
+                <MenuItem Header="_Save" Icon="&#x1F4BE;" />
+                <Separator />
+                <MenuItem Header="Exit" Icon="&#x2715;" />
+            </MenuItem>
+            <MenuItem Header="Edit">
+                <MenuItem Header="Undo" />
+                <MenuItem Header="Redo" />
+            </MenuItem>
+        </Menu>
+    </DockPanel>
+</Window>
