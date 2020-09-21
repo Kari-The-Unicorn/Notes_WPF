@@ -1,4 +1,4 @@
-﻿<Window x:Class="WpfAppExample.MainWindow"
+﻿<Window x:Class="Notes_WPF.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -12,16 +12,12 @@
             <Menu.Background>
                 <ImageBrush/>
             </Menu.Background>
-            <MenuItem Header="_File">
-                <MenuItem Header="_New" Icon="&#x1f4C4;" />
-                <MenuItem Header="_Open" Icon="&#x1F4C2;" />
-                <MenuItem Header="_Save" Icon="&#x1F4BE;" />
+            <MenuItem Header="Menu">
+                <MenuItem Header="_New note" Icon="&#x1f4C4;" />
+                <MenuItem Header="Undo" Icon="&#10226;" />
+                <MenuItem Header="Redo" Icon="&#10227;" />
                 <Separator />
-                <MenuItem Header="Exit" Icon="&#x2715;" />
-            </MenuItem>
-            <MenuItem Header="Edit">
-                <MenuItem Header="Undo" />
-                <MenuItem Header="Redo" />
+                <MenuItem Header="Exit" Icon="&#x2715;" Click="ExitMenuClicked" />
             </MenuItem>
         </Menu>
     </DockPanel>

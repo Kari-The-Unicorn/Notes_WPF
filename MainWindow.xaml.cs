@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WpfAppExample
+namespace Notes_WPF
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -23,6 +23,11 @@ namespace WpfAppExample
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void ExitMenuClicked (object sender, RoutedEventArgs e)
+        {
+            Environment.Exit(0);
         }
 
         private void SecondWindowButtonClicked (object sender, RoutedEventArgs e)
